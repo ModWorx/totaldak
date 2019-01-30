@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: #505962;
+}
+
+.offset:before {
+  display: block;
+  content: "";
+  height: 4rem;
+  margin-top: -4rem;
+}
+
+/*-- Navigatie --*/
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background: rgba(0, 0, 0, 0.6)!important;
+}
+.navbar-brand img {
+  height: 2rem;
+}
+.navbar-nav li {
+  padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: dodgerblue;
+}
+
+/*-- Landing Page --*/
+
+.home-inner {
+  background-image: url(img/roof.jpeg);
+}
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+}
+.caption h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+.caption h3 {
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black; 
+  padding-bottom: 1.6rem;
+}
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.3rem;
+  font-size: 1.1rem;
+}
+
+/*-- Diensten --*/
+
+.jumbotron {
+  margin-bottom: 0;
+  padding: 2rem 0 3.5rem;
+  border-radius: 0;
+}
+h3.heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+.heading-underline {
+  width: 3rem;
+  height: .2rem;
+  background-color: dodgerblue;
+  margin: 0 auto 2rem;
+}
+.feature svg.svg-inline--fa {
+  color: dodgerblue;
+}
+.feature h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding-bottom: .4rem;
+}
+.feature p {
+  font-size: 1.1rem;
+}
+
+/*-- Onze waarden --*/
+
+.fixed {
+  background-image: url(img/dakraam.jpg);
+  z-index: -1;
+}
+.dark {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 6rem 2rem;
+}
+.fixed-background h3 {
+  margin-bottom: 2rem;
+}
+.fixed-background p {
+  margin-top: 1.5rem;
+}
+
+/*-- Offerte --*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: .8rem; /* Some padding */ 
+  border: .20rem solid #ccc; /* Gray border */
+  border-radius: .5rem; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: .33rem; /* Add a top margin */
+  margin-bottom: 1.25rem; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: dodgerblue;
+  color: white;
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.3rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: dodgerblue;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: .4rem;
+  background-color: #40474e;
+  color: white;
+  padding: 1.2rem;
+} 
+
+
+/*-- Contact --*/
+
+footer {
+  background-color: #40474e;
+  color: white;
+  padding: 2rem 0 2rem;
+  margin-top: 2rem;
+}
+footer strong {
+  text-transform: uppercase;
+}
+footer a {
+  color: white;
+}
+footer svg.svg-inline--fa {
+  font-size: 1.6rem;
+  margin: 1.2rem .5rem 0 0;
+}
+footer svg.svg-inline--fa:hover {
+  color: dodgerblue!important;
+}
+hr.socket {
+  width: 100%;
+  border-top: .2rem solid #666b71;
+  margin-top: 3rem;
+}
+
+/*-- Media Queries --*/
+
+@media (max-width: 767px) {
+.caption h1 {
+  font-size: 2.3rem;
+  letter-spacing: .15rem;
+  padding-bottom: .5rem;
+}
+.caption h3 {
+  font-size: 1.2rem; 
+  padding-bottom: 1.2rem;
+}
+.btn-lg {
+  padding: .5rem 1rem;
+  font-size: 1rem;
+}
+.narrow h1 {
+  font-size: 1.5rem;
+}
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
